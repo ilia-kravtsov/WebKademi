@@ -315,3 +315,5 @@ console.log("Hello, World JS!")
 //
 // Symbol
 // BigIne
+//
+//                                     Операторы сравнения и условия

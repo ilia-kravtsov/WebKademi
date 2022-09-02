@@ -930,14 +930,14 @@ console.log(resultt);
 
 // Пример:                   Метод push
 
-const autoBrands = ['Audi', 'BMW', 'Mazda', 'Toyota']; 
-console.log(autoBrands); // консоль (4) ['Audi', 'BMW', 'Mazda', 'Toyota']
+// const autoBrands = ['Audi', 'BMW', 'Mazda', 'Toyota']; 
+// console.log(autoBrands); // консоль (4) ['Audi', 'BMW', 'Mazda', 'Toyota']
 
 // Задача добавить в массив ещё один элемент
 // Обращаюсь к массиву autobrands вызываю метод push и добавляю новый элемент 'Nissan'
 
-autoBrands.push('Nissan');
-console.log(autoBrands); // консоль (5) ['Audi', 'BMW', 'Mazda', 'Toyota', 'Nissan']
+// autoBrands.push('Nissan');
+// console.log(autoBrands); // консоль (5) ['Audi', 'BMW', 'Mazda', 'Toyota', 'Nissan']
 
 // особенность примера выше не смотря на const изменение прошло успешно, хотя по идее должна быьт ошибка
 // дело в том что массивы и объекты,  когда мы их используем и записываем в переменные
@@ -955,7 +955,7 @@ console.log(autoBrands); // консоль (5) ['Audi', 'BMW', 'Mazda', 'Toyota
 // значения массивов и объектов передаются по ссылке
 // т.е. 
 
-let array2 = autoBrands;
+// let array2 = autoBrands;
 
 // если мы проверим в консоли равны ли эти массивы, то мы увидим true
 // array2 ссылается на autoBrands который ссылатеся на массив ['Audi', 'BMW', 'Mazda', 'Toyota', 'Nissan']
@@ -972,12 +972,21 @@ let array2 = autoBrands;
 //                    Метод splice
 
 // целью метода является удаление элемента из массива
+const autoBrands = ['Audi', 'BMW', 'Mazda', 'Toyota'];
+autoBrands.push('Nissan');
 autoBrands.splice(2, 1);
-// 1 аргумент выше говорит с какого индекса стартовать и указатель становится перед этим индексом
+console.log(autoBrands);
+// консоль - (4) ['Audi', 'BMW', 'Toyota', 'Nissan']
+
+// 1 аргумент autoBrands.splice(2, 1); говорит с какого индекса стартовать и указатель становится перед этим индексом
 // ['Audi', 'BMW', 'Mazda', 'Toyota', 'Nissan'] то есть если 2 то указатель становится перед 'Mazda'
 // 2 аргумент говорит какое количество я хочу удалить, то есть если 1 то Mazda будет удалена
 // и после этого удаления останется:
 // ['Audi', 'BMW', 'Toyota', 'Nissan'];
+// если autoBrands.splice(2, 2); то ['Audi', 'BMW','Nissan'] т.е. 
+// стартуя со второго индекса удали 2 элемента
+
+//                                       Циклы
 
 
 

@@ -7,7 +7,7 @@
 
 //                                    Hello World JS!
 
-console.log("Hello, World JS!")
+console.log('hello world')
 
 //                                    Типы переменных: -----------------------------------------
 
